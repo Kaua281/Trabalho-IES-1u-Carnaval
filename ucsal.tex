@@ -21,29 +21,32 @@
 
 % Informações de título
 \title{\textbf{Seu Título Aqui}}
-\author{Autor 1 Nome \thanks{autor1@ucsal.edu.br}}
-\author{Autor 2 Nome \thanks{autor2@ucsal.edu.br}}
-\author[1]{Autor 3 Nome \thanks{autor3@ucsal.edu.br}}
-\author[1]{Autor 4 Nome \thanks{autor4@ucsal.edu.br}}
-\author[1]{Autor 5 Nome \thanks{autor5@ucsal.edu.br} }
-\author[1*]{Orientador Nome \thanks{orientador@pro.ucsal.br}}
-\author[1*]{Coorientador Nome \thanks{coorientador@pro.ucsal.br}}
+\author{Kauã Oliveira Seixas \thanks{kaua.seixas@ucsal.edu.br}}
+\author{Rivaldo de Jesus Santos \thanks{rivaldo.santos@ucsal.edu.br}}
+\author[1]{Vinícius Scola Santana \thanks{viniciusscola.santana@ucsal.edu.br}}
+\author[1]{Eduardo Campos Aguiar \thanks{eduardo.aguiar@ucsal.edu.br}}
+\author[1]{Cauã César Rodrigues Costa\thanks{cauacesar.costa@ucsal.edu.br} }
+\author[1*]{Orientador: Elton Figueiredo da Silva \thanks{elton.figueiredo@pro.ucsal.br}}
+
+
+\pagenumbering{gobble} % Remove numeração de página
 
 \affil{
-  Análise e Desenvolvimento de Sistemas \par
+  Bacharelado em Engenharia de Software \par
   Escola de Tecnologias \par
 Universidade Católica do Salvador (UCSAL) \par
 Av. Prof. Pinto de Aguiar, 2589 Pituaçu, CEP: 41740-090 \par
 Salvador/BA, Brasil
 }
-\affil[1]{\textit {\{autor1,autor2,autor3,autor4,autor5\}@ucsal.edu.br}}
-\affil[1*]{\textit {\{orientador,coorientador\}@pro.ucsal.edu.br}}
+% !TODO - Verificar com Professor se é essa formatação mesmo, ou é algum erro no modelo
+\affil[1]{\textit {\{Kauã Oliveira Seixas, Rivaldo de Jesus Santos, Vinícius Scola Santana
+, Eduardo Campos Aguiar, Cauã César Rodrigues Costa\}@ucsal.edu.br}}
+\affil[1*]{\textit {\{Elton Figueiredo da Silva\}@pro.ucsal.edu.br}}
 
 
 
 
-
-\date{Abril 2024}
+\date{Abril 2025}
 
 
 
@@ -68,32 +71,34 @@ Salvador/BA, Brasil
 \newsavebox\affbox
 
 
-
-
-
 \begin{document}
 
 \begin{center}
-    \includegraphics[width=0.3\textwidth]{imagens-template/ucsal_logo.png} 
+  \includegraphics[width=0.3\textwidth]{imagens-template/ucsal_logo.png}
 \end{center}
 {\let\newpage\relax\maketitle}
 
+\clearpage
+\pagenumbering{arabic} % Retoma a numeração normal
 \begin{resumoumacoluna}
- \lipsum[1] % Gera um texto de exemplo
- \vspace{\onelineskip}
- 
- \noindent
- \textbf{Palavras-chaves}: palavra1, palavra2, palavra3.
+  \lipsum[1] % Gera um texto de exemplo
+  \vspace{\onelineskip}
+
+  \noindent
+  \textbf{Palavras-chaves}: palavra1, palavra2, palavra3.
 \end{resumoumacoluna}
+
+\clearpage
 
 \textual
 
 \section{Introdução}
 \lipsum[2-4]\cite{boulic:91}.
-\citeonline{boulic:91} teste.
+\citeonline{boulic:91}
 
 \section{Desenvolvimento}
 \lipsum[5-6]
+\citeonline{ribeiro:100}
 
 \subsection{Subseção de Exemplo}
 \lipsum[7]
